@@ -1,0 +1,15 @@
+- icon: /assets/images/MODEL.png
+  name: Model
+  description: To efficiently understand an operation and the assets it uses, we first work to logically represent it in a flexible information model. This allows us to tailor your solution to your business & needs specifically.
+
+- icon: /assets/images/MONITOR.png
+  name: Monitor
+  description: Once we’ve got a grip on the operation we begin monitoring it. We use a varierty of analysis techniques to keep an ye on the performance of assets and derive extra information about the current operation.
+
+- icon: /assets/images/PREDICT.png
+  name: Predict
+  description: With some fundamental knowledge and historical data, we use machine learning to predict how it will perform under different circumstances. This allows us to provide an early waning system for potential issues.
+
+- icon: /assets/images/OPTIMISE.png
+  name: Optimise
+  description: The monitoring and prediction gives us a great understanding of your current operation. From here we start applying optimisation techniques to make and sustain significant improvements.

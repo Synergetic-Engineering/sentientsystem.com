@@ -1,81 +1,25 @@
-<div id='footer'>
-  <div class='three spacing'></div>
-  <div class='row'>
-    <div class='large-3 medium-3 columns'>
-      <h1>
-        <a href='index.html'>
-          <img alt="" src="{{site.url}}/images/logo-grey.png" />
-        </a>
-      </h1>
-      <p>©2014 Devoll. All rights reserved.</p>
-      <div class='spacing'></div>
-      <div class='spacing'></div>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="{{ "/assets/js/app.js" | prepend: site.baseurl }}"></script>
+
+<section class="fluid" id="contact-us">
+  <div class="wrapper">
+    <h1 class="title text-center has-subtitle mt-5">Book a Free Virtual Strategy Session</h1>
+    <p class="sub-title text-center">What will Sentient System help you do in your business?</p>
+
+    <p class="mt-2">We will build a picture where you are compared to other inudstry players, in terms of using humans versus AI and machines. where you could be in 5-10 years time and a potential roadmap of how you cloud get there.</p>
+
+    <div class="form-container">
+      <form name="contact" method="POST" id="contact" netlify>
+        <div class="row">
+          <div class="col-md-4"><input name="name" class="field" type="text" placeholder="Name"></div>
+          <div class="col-md-8"><input name="email" class="field" type="email" placeholder="Email"></div>
+          <div class="col-md-4"><input name="business-name" class="field" type="text" placeholder="Business Name"></div>
+          <div class="col-md-6"><input name="phone-number" class="field" type="tel" placeholder="Phone Number"></div>
+          <div class="col-md-2"><button class="btn btn-100" type="submit">SUBMIT</button></div>
+        </div>
+      </form>
     </div>
-    <div class='large-3 medium-3 columns'>
-      <div class='spacing'></div>
-      <div class='links'>
-        <h4>Some pages</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="portfolio.html">View some works here</a></li>
-          <li><a href="blog.html">Follow our blog</a></li>
-          <li><a href="contact.html">Contact us</a></li>
-          <li><a href="services.html">Our services</a></li>
-        </ul>
-      </div>
-      <div class='spacing'></div>
-    </div>
-    <div class='large-3 medium-3 columns'>
-      <div class='spacing'></div>
-      <div class='links'>
-        <h4>Recent posts</h4>
-        <ul>
-          {% for post in site.posts %}
-            <li><a href="{{post.url}}">{{post.title}}</a></li>
-          {% endfor %}
-        </ul>
-      </div>
-      <div class='spacing'></div>
-    </div>
-    <div class='large-3 medium-3 columns'>
-      <div class='spacing'></div>
-      <h4>Contact us</h4>
-      <ul>
-        <li>Phone: +86 (03) 9810 4612</li>
-        <li>Emial: info@devoll-team.com</li>
-        <li>Location: 41 Dean Street, London, UK</li>
-      </ul>
-      <div class='spacing'></div>
-      <ul class='socials'>
-        <li>
-          <a href='http://facebook.com'>
-            <i class='fa fa-facebook'></i>
-          </a>
-        </li>
-        <li>
-          <a href='http://twitter.com'>
-            <i class='fa fa-twitter'></i>
-          </a>
-        </li>
-        <li>
-          <a href='http://dribbble.com'>
-            <i class='fa fa-dribbble'></i>
-          </a>
-        </li>
-        <li>
-          <a href='http://tumblr.com'>
-            <i class='fa fa-tumblr'></i>
-          </a>
-        </li>
-      </ul>
-      <div class='spacing'></div>
-    </div>
+
   </div>
-  <div class='two spacing'></div>
-</div>
-<script src="{{ "/javascripts/jquery.countTo.js" | prepend: site.baseurl }}" type="text/javascript"></script>
-<script src="{{ "/javascripts/jquery.appear.js" | prepend: site.baseurl }}" type="text/javascript"></script>
-<script src="{{ "/javascripts/jquery.validate.js" | prepend: site.baseurl }}" type="text/javascript"></script>
-<script src="{{ "/javascripts/jquery.sequence-min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
-<script src="{{ "/javascripts/jquery.easing.1.3.js" | prepend: site.baseurl }}" type="text/javascript"></script>
-<script src="{{ "/javascripts/app.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+</section>

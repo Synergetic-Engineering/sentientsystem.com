@@ -1,0 +1,23 @@
+- label: Home
+  target: /
+
+- label: About
+  target: /about/
+
+- label: Capabilities
+  target: /capabilities/
+
+- label: Case Studies
+  target: /case-tudies/
+
+- label: Research
+  target: /research/
+
+- label: Resources
+  target: /resources/
+
+- label: News
+  target: /news/
+
+- label: Contact
+  target: /contact/

@@ -1,0 +1,29 @@
+- icon: /assets/images/LIGHTBULB.png
+  name: Early Warning & Fault Detection
+  description: Get alerted to potential faults before they occur, preventing costly downtime.
+  target_url: #
+
+- icon: /assets/images/CHART.png
+  name: Scenario Modelling
+  description: Replicate your assets in a virtual environment to understand multi- dimensional influences.
+  target_url: #
+
+- icon: /assets/images/CLOCK.png
+  name: Real-Time Recommendations
+  description: Via real-time data + a comprehensive industry knowlegde bank.
+  target_url: #
+
+- icon: /assets/images/PIEGRAPH.png
+  name: Comprehensive Data Analysis Tools
+  description: Data analysis tools to support evidence-based strategic and operational decisions.
+  target_url: #
+
+- icon: /assets/images/BRAIN.png
+  name: Self-learning System
+  description: Combine fundamental and experiental knowledge and data with ground-breaking machine learning and AI to create a digital twin of any complex system.
+  target_url: #
+
+- icon: /assets/images/PIGGYBANK.png
+  name: Rapid & Measurable Payback
+  description: Combine industry knowlegde with trends and future directions to create a decision support platform for qualified and reliable outcomes.
+  target_url: #
