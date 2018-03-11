@@ -1,5 +1,7 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="{{ "/assets/js/sweetalert2.js" | prepend: site.baseurl }}"></script>
 <script src="{{ "/assets/js/app.js" | prepend: site.baseurl }}"></script>
 
 <section class="fluid" id="contact-us">
@@ -14,8 +16,8 @@
         <div class="row">
           <div class="col-md-4"><input name="name" class="field" type="text" placeholder="Name"></div>
           <div class="col-md-8"><input name="email" class="field" type="email" placeholder="Email"></div>
-          <div class="col-md-4"><input name="business-name" class="field" type="text" placeholder="Business Name"></div>
-          <div class="col-md-6"><input name="phone-number" class="field" type="tel" placeholder="Phone Number"></div>
+          <div class="col-md-4"><input name="businessname" class="field" type="text" placeholder="Business Name"></div>
+          <div class="col-md-6"><input name="phonenumber" class="field" type="tel" placeholder="Phone Number"></div>
           <div class="col-md-2"><button class="btn btn-100" type="submit">SUBMIT</button></div>
         </div>
       </form>

@@ -165,6 +165,13 @@ pre {
 }
 
 /**
+ * Override sweetalert style
+ */
+.swal2-popup .swal2-styled.swal2-confirm {
+    background-color: $brand-color !important
+}
+
+/**
  * Wrapper
  */
 .wrapper {
@@ -264,6 +271,7 @@ section {
     color: #fff !important;
     padding: 9px 20px;
     border-radius: 3px;
+    cursor: pointer;
     -moz-transition-property: all;
     -o-transition-property: all;
     -webkit-transition-property: all;
