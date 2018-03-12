@@ -39,8 +39,13 @@ $(document).ready(function($){
 	  	doAlert('Phone number cannot be empty.');
 	  } else {
 	  	$.post($form.attr('action'), $form.serialize()).then(function() {
-	  		$(this).trigger("reset");
-			swal('Thank you', 'We will get back to you soon!', 'success');
+	  		swal({
+			  title: 'Thank you',
+			  text: "We will get back to you soon!",
+			  type: 'success'
+			}).then((result) => {
+	  			$('#contact').trigger("reset");
+			});
 		});
 	  }
 
