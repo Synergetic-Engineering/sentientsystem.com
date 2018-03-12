@@ -8,8 +8,7 @@
 # Site settings
 title: Sentient System
 description: > # this means to ignore newlines until "baseurl:"
-  Sentient System is a self-learning simulation engine - test learned or theoretical scenarios (or a combination of both) to evaluate
-optimise and manage their real-time impact to complex or simple systems.
+  Sentient System is a self-learning simulation engine - test learned or theoretical scenarios (or a combination of both) to evaluate optimise and manage their real-time impact to complex or simple systems.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://sentientsystem.com" # the base hostname & protocol for your site
 
