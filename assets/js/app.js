@@ -7,16 +7,6 @@ $(window).scroll(function() {
 });
 
 $(document).ready(function($){
-	$(document).on('click', 'a[href^="#"]', function (event) {
-	    event.preventDefault();
-
-	    $('html, body').animate({
-	        scrollTop: $($.attr(this, 'href')).offset().top
-	    }, 500);
-	});
-});
-
-$(document).ready(function($){
 	function validateEmail(email) {
 	  var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 	  return re.test(email);
@@ -39,21 +29,29 @@ $(document).ready(function($){
 	  var business = $('input[name="businessname"]').val();
 	  var phone = $('input[name="phonenumber"]').val();
 
-	  if( name == '' ) {
+	  if( name === '' ) {
 	  	doAlert('Field name cannot be empty.');
 	  } else if( !validateEmail(email) ) {
 	  	doAlert('Your email address is invalid.');
-	  } else if( business != '' ) {
+	  } else if( business === '' ) {
 	  	doAlert('Business name cannot be empty.');
-	  } else if( phone != '' ) {
+	  } else if( phone === '' ) {
 	  	doAlert('Phone number cannot be empty.');
 	  } else {
 	  	$.post($form.attr('action'), $form.serialize()).then(function() {
 			swal('Thank you', 'We will get back to you soon!', 'success');
-			$('#contact').trigger('reset');
 		});
 	  }
 
+	  
 	});
 
+	$(document).on('click', 'a[href^="#"]', function (event) {
+	    event.preventDefault();
+
+	    $('html, body').animate({
+	        scrollTop: $($.attr(this, 'href')).offset().top
+	    }, 500);
+	});
+	
 });
