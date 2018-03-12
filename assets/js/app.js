@@ -30,7 +30,7 @@ $(document).ready(function($){
     	e.preventDefault();
   	});
 
-	$('#contact #submit').on('click', function(e) {
+	$('#contact').submit(function(e) {
 	  e.preventDefault();
 
 	  var $form = $(this);
@@ -43,16 +43,17 @@ $(document).ready(function($){
 	  	doAlert('Field name cannot be empty.');
 	  } else if( !validateEmail(email) ) {
 	  	doAlert('Your email address is invalid.');
-	  } else if( business == '' ) {
+	  } else if( business != '' ) {
 	  	doAlert('Business name cannot be empty.');
-	  } else if( phone == '' ) {
+	  } else if( phone != '' ) {
 	  	doAlert('Phone number cannot be empty.');
 	  } else {
 	  	$.post($form.attr('action'), $form.serialize()).then(function() {
 			swal('Thank you', 'We will get back to you soon!', 'success');
-			$('#contact').trigger("reset");
+			$('#contact').trigger('reset');
 		});
 	  }
 
 	});
+
 });
