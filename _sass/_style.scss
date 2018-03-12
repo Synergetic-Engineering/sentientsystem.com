@@ -644,3 +644,37 @@ header {
         max-width: 850px;
     }
 }
+
+/**
+ * How does it work
+ */
+#how-does-it-work {
+    .wrapper {
+        max-width: 780px;
+        @include media-query($on-mobile) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    h3 {
+        font-size: 17px;
+        line-height: 1.1
+    }
+
+    .instrument-input {
+        background: #E5EBF1
+    }
+    .concept {
+        background: #D5E0ED
+    }
+    .simulate {
+        background: #C4D6E8
+    }
+    .analyse {
+        background: #B4CBE2
+    }
+    .execute {
+        background: #A3C1DF
+    }
+}
