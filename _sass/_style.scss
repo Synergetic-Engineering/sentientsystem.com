@@ -353,7 +353,7 @@ section {
             margin-right: 20px;
         }
 
-        @include media-query($on-mobile) {
+        @include media-query($on-tablet) {
             background: #fff;
             text-align: left;
             padding: 9px 19px !important;
@@ -362,7 +362,7 @@ section {
         }
     }
 
-    @include media-query($on-mobile) {
+    @include media-query($on-tablet) {
         position: absolute;
         top: 9px;
         right: $spacing-unit / 2;
@@ -466,6 +466,12 @@ header {
         @include media-query($on-mobile) {
             top: 0px !important;
         }
+
+        @include media-query($on-tablet) {
+            .trigger {
+                margin-top: 51px !important;
+            }
+        }
     }
 }
 
@@ -480,7 +486,11 @@ header {
     overflow: hidden;
 
     @include media-query($on-mobile) {
-        height: 90vh;
+        height: 90vh
+    }
+
+    @include media-query($on-tablet) {
+        height: 55vh
     }
 
     .content {
@@ -496,6 +506,10 @@ header {
             display: inline-block;
             margin: 45% auto 0 auto;
             padding: 20px;
+        }
+
+        @include media-query($on-tablet) {
+            margin: 25% auto 0 auto;
         }
 
         h1 {
@@ -519,6 +533,11 @@ header {
         @include media-query($on-mobile) {
             bottom: -39px;
             width: 70%
+        }
+
+        @include media-query($on-tablet) {
+            bottom: -60px;
+            width: 55%
         }
     }
 }
@@ -666,15 +685,37 @@ header {
         background: #E5EBF1
     }
     .concept {
-        background: #D5E0ED
+        background: #D5E0ED;
+
+        @include media-query($on-tablet) {
+            .mb-1 {
+                margin-top: -17px;
+            }
+        }
     }
     .simulate {
-        background: #C4D6E8
+        background: #C4D6E8;
+
+        @include media-query($on-tablet) {
+            .mb-1 {
+                margin-top: -10px;
+            }
+        }
     }
     .analyse {
         background: #B4CBE2
     }
     .execute {
         background: #A3C1DF
+    }
+}
+
+/* fix for table */
+@include media-query($on-tablet) {
+    .col-sm-6 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
     }
 }

@@ -20,7 +20,7 @@ layout: default
   <div class="blurb-4">
     <div class="row mt-4">
       {% for item in site.data.capabilities %}
-        <div class="item col-md-3 col-xs-12">
+        <div class="item col-lg-3 col-md-6 col-sm-12">
           <div class="icon"><img src="{{ item.icon }}"></div>
           <h3>{{ item.name }}</h3>
           <p>{{ item.description }}</p>
@@ -37,7 +37,7 @@ layout: default
   <div class="blurb-3">
     <div class="row mt-4">
       {% for item in site.data.outcomes %}
-        <div class="item col-md-4 col-xs-12">
+        <div class="item col-lg-4 col-md-6 col-sm-12">
           <div class="icon"><img src="{{ item.icon }}"></div>
           <h3>{{ item.name }}</h3>
           <p>{{ item.description }}</p>        
@@ -56,10 +56,10 @@ layout: default
   <div class="blurb-image">
     <div class="row mt-4">
       {% for item in site.data.your_role %}
-        <div class="item col-md-3 col-xs-12">
+        <div class="item col-lg-3 col-md-6 col-sm-12">
           <div class="image">
             <span class="subtitle">{{ item.subtitle }}</span>
-            <img src="{{ item.image }}">
+            <img class="img-fluid" src="{{ item.image }}">
           </div>
           <h3>{{ item.title }}</h3>
           <p>{{ item.description }}</p>
@@ -77,10 +77,10 @@ layout: default
   <div class="blurb-image">
     <div class="row mt-4">
       {% for item in site.data.common_issues %}
-        <div class="item col-md-3 col-xs-12">
+        <div class="item col-lg-3 col-md-6 col-sm-12">
           <div class="image">
             <span class="subtitle">{{ item.subtitle }}</span>
-            <img src="{{ item.image }}">
+            <img class="img-fluid" src="{{ item.image }}">
           </div>
           <h3>{{ item.title }}</h3>
           <p>{{ item.description }}</p>
@@ -99,32 +99,32 @@ layout: default
   <div class="wrapper">
     <div class="instrument-input">
       <div class="row pt-3">
-        <div class="col-md-3 col-xs-12 text-center">
+        <div class="col-md-3 col-sm-12 text-center">
           <img height="50px" src="./assets/images/FORMS.png">
           <h3>Forms</h3>
         </div>
-        <div class="col-md-3 col-xs-12 text-center">
+        <div class="col-md-3 col-sm-12 text-center">
           <img height="50px" src="./assets/images/IOT.png">
           <h3>IOT</h3>
         </div>
-        <div class="col-md-3 col-xs-12 text-center">
+        <div class="col-md-3 col-sm-12 text-center">
           <img height="50px" src="./assets/images/CONTROLSYSTEM.png">
           <h3>Control System</h3>
         </div>
-        <div class="col-md-3 col-xs-12 text-center">
+        <div class="col-md-3 col-sm-12 text-center">
           <img height="50px" src="./assets/images/FORMS.png">
           <h3>Forms</h3>
         </div>
-        <div class="col-md-12 col-xs-12 pt-1 pb-1"><h2 class="text-center">INSTRUMENT INPUT</h2></div>
+        <div class="col-md-12 col-sm-12 pt-1 pb-1"><h2 class="text-center">INSTRUMENT INPUT</h2></div>
       </div>
     </div>
 
     <div class="concept">
       <div class="row pt-3 pl-5 pr-5">
-        <div class="col-md-10 col-xs-12 text-left">
+        <div class="col-md-10 col-sm-12 text-left">
           <h2>CONCEPTUALISE | VALIDATE | LEARN</h2>
         </div>
-        <div class="col-md-2 col-xs-12 text-right mb-1">
+        <div class="col-md-2 col-sm-12 text-right mb-1">
           <img src="./assets/images/KNOWLEDGE.png">          
         </div>
       </div>
@@ -132,10 +132,10 @@ layout: default
 
     <div class="simulate">
       <div class="row pt-3 pl-5 pr-5">
-        <div class="col-md-2 col-xs-12 text-left mb-1">
+        <div class="col-md-2 col-sm-12 text-left mb-1">
           <img src="./assets/images/TWINS.png">          
         </div>
-        <div class="col-md-10 col-xs-12 text-right">
+        <div class="col-md-10 col-sm-12 text-right">
           <h2>SIMULATE THROUGH DIGITAL TWIN</h2>
         </div>
       </div>
@@ -143,53 +143,53 @@ layout: default
 
     <div class="analyse">
       <div class="row pt-3">
-        <div class="col-md-2 col-xs-12 col-md-offset-1 text-center">
+        <div class="col-md-2 col-sm-12 offset-md-1 text-center">
           <img height="50px" src="./assets/images/EARLYWARNING.png">
           <h3>Early warnings</h3>
         </div>
-        <div class="col-md-2 col-xs-12 text-center">
+        <div class="col-md-2 col-sm-12 text-center">
           <img height="50px" src="./assets/images/PREDICTION.png">
           <h3>Prediction</h3>
         </div>
-        <div class="col-md-2 col-xs-12 text-center">
+        <div class="col-md-2 col-sm-12 text-center">
           <img height="50px" src="./assets/images/OPTIMISATION.png">
           <h3>Optimisation</h3>
         </div>
-        <div class="col-md-2 col-xs-12 text-center">
+        <div class="col-md-2 col-sm-12 text-center">
           <img height="50px" src="./assets/images/DESCISION-MAKING.png">
           <h3>Decision Making</h3>
         </div>
-        <div class="col-md-2 col-xs-12 text-center">
+        <div class="col-md-2 col-sm-12 text-center">
           <img height="50px" src="./assets/images/REALTIME.png">
           <h3>Real-Time Control</h3>
         </div>
-        <div class="col-md-12 col-xs-12 pt-1 pb-1"><h2 class="text-center">ANALYSE</h2></div>
+        <div class="col-md-12 col-sm-12 pt-1 pb-1"><h2 class="text-center">ANALYSE</h2></div>
       </div>
     </div>
 
     <div class="execute">
       <div class="row pt-3">
-        <div class="col-md-2 col-xs-12 col-md-offset-1 text-center">
+        <div class="col-md-2 col-sm-12 offset-md-1 text-center">
           <img height="50px" src="./assets/images/CONTROLSYSTEMS2.png">
           <h3>Control Systems</h3>
         </div>
-        <div class="col-md-2 col-xs-12 text-center">
+        <div class="col-md-2 col-sm-12 text-center">
           <img height="50px" src="./assets/images/BUSINESSYSTEMS2.png">
           <h3>Business Systems</h3>
         </div>
-        <div class="col-md-2 col-xs-12 text-center">
+        <div class="col-md-2 col-sm-12 text-center">
           <img height="50px" src="./assets/images/CONTROLSYSTEM.png">
           <h3>Control System</h3>
         </div>
-        <div class="col-md-2 col-xs-12 text-center">
+        <div class="col-md-2 col-sm-12 text-center">
           <img height="50px" src="./assets/images/BUSINESSYSTEMS.png">
           <h3>Business Systems</h3>
         </div>
-        <div class="col-md-2 col-xs-12 text-center">
+        <div class="col-md-2 col-sm-12 text-center">
           <img height="50px" src="./assets/images/REPORTINGSYSTEMS.png">
           <h3>Reporting Systems</h3>
         </div>
-        <div class="col-md-12 col-xs-12 pt-1 pb-1"><h2 class="text-center">EXECUTE</h2></div>
+        <div class="col-md-12 col-sm-12 pt-1 pb-1"><h2 class="text-center">EXECUTE</h2></div>
       </div>
     </div>
 
