@@ -26,20 +26,26 @@ $(document).ready(function($){
 	  var $form = $(this);
 	  var name = $('input[name="name"]').val();
 	  var email = $('input[name="email"]').val();
-	  var business = $('input[name="businessname"]').val();
-	  var phone = $('input[name="phonenumber"]').val();
+	  var business = $('input[name="business-name"]').val();
+	  var phone = $('input[name="phone-number"]').val();
 
-	  if( name == '' ) {
+	  if( name === '' ) {
 	  	doAlert('Field name cannot be empty.');
 	  } else if( !validateEmail(email) ) {
 	  	doAlert('Your email address is invalid.');
-	  } else if( business != '' ) {
+	  } else if( business === '' ) {
 	  	doAlert('Business name cannot be empty.');
-	  } else if( phone != '' ) {
+	  } else if( phone === '' ) {
 	  	doAlert('Phone number cannot be empty.');
 	  } else {
 	  	$.post($form.attr('action'), $form.serialize()).then(function() {
-			swal('Thank you', 'We will get back to you soon!', 'success');
+	  		swal({
+			  title: 'Thank you',
+			  text: "We will get back to you soon!",
+			  type: 'success'
+			}).then((result) => {
+	  			$('#contact').trigger("reset");
+			});
 		});
 	  }
 
