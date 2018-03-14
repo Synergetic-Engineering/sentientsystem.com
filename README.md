@@ -1,9 +1,24 @@
 
+
 # SentientSystem Website
 
 _<http://sentientsystem.com>_
 
 Built with Jekyll, hosted with netlify.
+
+## Local Development
+
+ 1. Getting Jekyll installed in your PC, take a look [this tutorial](https://jekyllrb.com/docs/installation/)  
+ 2. Clone the repository
+  `git clone https://github.com/Synergetic-Engineering/sentientsystem.com.git`
+  before you doing this step, please ensure your PC already installed GIT, not yet install GIT ? Please take a look [this tutorial](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+ 3. Install bundle dependencies with command
+ `bundle install`
+ 4. Run jekyll project with command 
+ `jekyll serve`
+ or 
+ `jekyll serve --watch` 
+ (this command only used when you change the code or data)
 
 ## Menu
 
