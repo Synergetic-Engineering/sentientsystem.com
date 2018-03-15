@@ -1,6 +1,6 @@
 # SentientSystem website
 
-_<http://sentientsystem.netlify.com>_ - Built with [Jekyll](https://jekyllrb.com/), hosted with [Netlify](https://www.netlify.com), administered [here](https://app.netlify.com/sites/sentientsystem).
+_https://sentientsystem.netlify.com_ - A [JAMstack](https://jamstack.org/) product site built using [Jekyll](https://jekyllrb.com/), hosted with [Netlify](https://www.netlify.com), administered [here](https://app.netlify.com/sites/sentientsystem).
 
 ## Content contribution guide
 
@@ -22,6 +22,9 @@ Currently there are no actively used content types. In the future, it is expecte
 
 Useful links for development
 
+- https://jamstack.org/
+- https://jekyllrb.com/
+- https://www.netlify.com
 - https://github.com/Shopify/liquid/wiki/Liquid-for-Designers
 - https://getbootstrap.com/docs/4.0/layout/grid/
 - https://sass-lang.com/documentation/file.SASS_REFERENCE.html
