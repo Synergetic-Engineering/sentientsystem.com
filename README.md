@@ -1,8 +1,8 @@
 
 
-# SentientSystem Website
+# SentientSystem website
 
-_<http://sentientsystem.com>_ - Built with Jekyll, hosted with netlify.
+_<http://sentientsystem.netlify.com>_ - Built with Jekyll, hosted with netlify.
 
 ## Local Development
 
@@ -20,8 +20,13 @@ Useful links for development
 - https://getbootstrap.com/docs/4.0/layout/grid/
 - https://sass-lang.com/documentation/file.SASS_REFERENCE.html
 
+## Content contribution guide
 
-## Configuration info
+This site has [https://www.netlifycms.org/](https://www.netlifycms.org/) set up to make via [http://sentientsystem.com/**admin/**](http://sentientsystem.com/admin/) (don't forget the trailing slash)
+
+This requires an account (which are manually added through netlify admin console)
+
+## Site configuration info
 
 ### Menu
 
