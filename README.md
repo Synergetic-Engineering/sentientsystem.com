@@ -1,8 +1,14 @@
-
-
 # SentientSystem website
 
-_<http://sentientsystem.netlify.com>_ - Built with Jekyll, hosted with netlify.
+_<http://sentientsystem.netlify.com>_ - Built with [Jekyll](https://jekyllrb.com/), hosted with [Netlify](https://www.netlify.com), administered [here](https://app.netlify.com/sites/sentientsystem).
+
+## Content contribution guide
+
+This site has [Netlify CMS](https://www.netlifycms.org/) set up for content authoring, reviewing and publication via [http://sentientsystem.com/**admin/**](http://sentientsystem.com/admin/) (don't forget the trailing slash)
+
+Doing this requires a site _admin account_ (Netlify Identity) that are manually created through the Netlify admin console [here](https://app.netlify.com/sites/sentientsystem/identity).
+
+Currently there are no actively used content types. In the future, it is expected that things like blogs, R&D projects and case studies will be designed, developed and configured to be managed using this CMS. An explination about each compoent type will be documented here.
 
 ## Local Development
 
@@ -20,13 +26,7 @@ Useful links for development
 - https://getbootstrap.com/docs/4.0/layout/grid/
 - https://sass-lang.com/documentation/file.SASS_REFERENCE.html
 
-## Content contribution guide
-
-This site has [https://www.netlifycms.org/](https://www.netlifycms.org/) set up to make via [http://sentientsystem.com/**admin/**](http://sentientsystem.com/admin/) (don't forget the trailing slash)
-
-This requires an account (which are manually added through netlify admin console)
-
-## Site configuration info
+## Site configuration / development guide
 
 ### Menu
 
