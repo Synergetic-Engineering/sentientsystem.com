@@ -571,7 +571,7 @@ header {
             text-align: center;
 
             img {
-                width: 50%;
+                width: 75%;
                 text-align: center;
                 @include media-query($on-mobile) {
                     min-width: 115px;
