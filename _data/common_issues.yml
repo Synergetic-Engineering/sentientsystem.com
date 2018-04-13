@@ -1,23 +1,23 @@
-- image: /assets/images/assets-manager.png
+- image: /assets/images/latency.png
   title: Assets Managers
   subtitle: Assets
   description: Get the most value out of an asset by maximising its service life and minimising cost through automated lfecycle optimisation of individual...
   target_url: #
 
-- image: /assets/images/operations-manager.png
+- image: /assets/images/down-time.png
   title: Operations Managers
   subtitle: Operations
   description: Translate data & knowledge from whoe of system influencers into productivity improvements by knowing issues before problems occur, minimising...
   target_url: #
 
-- image: /assets/images/performance-manager.png
+- image: /assets/images/reactive.png
   title: Performance  Managers
   subtitle: Performance 
   description: Identify, quantify & act on opputunites & risks at a component level of system wide improvements with reduced costs...
   target_url: #
 
-- image: /assets/images/board-members.png
-  title: Board Members
-  subtitle: Board
+- image: /assets/images/preventable-crisis.png
+  title: Lorem Ipsum
+  subtitle: Preventable Crisis
   description: Move towards sustainability with minimal cost and risk and maximum efficiency. Show progress and keep up with changing...
   target_url: #
