@@ -567,10 +567,11 @@ header {
         }
 
         .icon {
-            min-height: 145px;
+            min-height: 105px;
             text-align: center;
 
             img {
+                width: 50%;
                 text-align: center;
                 @include media-query($on-mobile) {
                     min-width: 115px;
@@ -604,7 +605,7 @@ header {
             text-align: center;
 
             img {
-                width: 25%;
+                width: 75%;
                 text-align: center;
                 @include media-query($on-mobile) {
                     min-width: 115px;
