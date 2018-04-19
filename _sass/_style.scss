@@ -515,6 +515,7 @@ header {
         h1 {
             font-weight: 700;
             font-size: 40px;
+            color: #5b72ab;
             @include media-query($on-mobile) {
                 font-size: 35px;
                 line-height: 1;
@@ -524,10 +525,10 @@ header {
 
         p {
             font-size: 19px;
+            color: #5b72ab;
 
             @include media-query($on-mobile) {
                 font-size: 16px;
-                color: #fff;
             }
 
         }
