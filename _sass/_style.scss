@@ -287,7 +287,7 @@ section {
 }
 
 .btn:hover {
-    background:darken($brand-color,15%); 
+    background:darken($brand-color,15%);
     -moz-transition-property: all;
     -o-transition-property: all;
     -webkit-transition-property: all;
@@ -313,7 +313,7 @@ section {
         div {
             padding: 5px;
             display: flex;
-            
+
             @include media-query($on-mobile) {
                 padding: 5px 0;
                 width: 100%;
@@ -502,7 +502,7 @@ header {
         margin: 17% auto 0 auto;
 
         @include media-query($on-tablet) {
-            margin: 25% auto 0 auto;
+            margin: 20% auto 0 auto;
         }
 
         @include media-query($on-mobile) {
@@ -542,14 +542,13 @@ header {
         right: 0;
         margin: 0 auto;
 
-        @include media-query($on-mobile) {
-            bottom: -39px;
-            width: 70%
+        @include media-query($on-tablet) {
+            opacity: 0;
         }
 
-        @include media-query($on-tablet) {
-            bottom: -55px;
-            width: 55%
+        @include media-query($on-tablet-hor) {
+            bottom: -60px;
+            width: 45%
         }
     }
 }
