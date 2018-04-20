@@ -4,20 +4,23 @@
 - label: About
   target: /about/
 
-#- label: Capabilities
-#  target: /capabilities/
+- label: Capabilities
+  target: /capabilities/
+  class: hide-sm
 
 - label: Case Studies
-  target: /case-tudies/
+  target: /case-studies/
 
 - label: Research
   target: /research/
 
-#- label: Resources
-#  target: /resources/
+- label: Resources
+  target: /resources/
+  class: hide-sm
 
-#- label: News
-#  target: /news/
+- label: News
+  target: /news/
+  class: hide-sm
 
 - label: Contact
   target: /contact/
