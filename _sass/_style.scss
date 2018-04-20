@@ -492,7 +492,14 @@ header {
     }
 }
 
+
 /* hero or banner */
+@media only screen and (min-device-width: 500px) and (max-device-width: 740px) and (orientation:landscape) {
+    .hide-lanscape {
+        display: none;
+    }
+}
+
 .hero {
     height: 100vh;
     background: #f7f7f7;
@@ -516,7 +523,7 @@ header {
         padding-right: $spacing-unit;
         padding-left: $spacing-unit;
         display: inline-block;
-        margin: 17% auto 0 auto;
+        margin: 18% auto 0 auto;
 
         @include media-query($on-tablet) {
             margin: 20% auto 0 auto;
@@ -531,9 +538,14 @@ header {
 
         h1 {
             font-weight: 700;
-            font-size: 40px;
+            font-size: 60px;
             color: #5b72ab;
             @include media-query($on-mobile) {
+                font-size: 35px;
+                line-height: 1;
+                margin-top: 15px;
+            }
+            @media only screen and (min-device-width: 500px) and (max-device-width: 1023px) and (orientation:landscape) {
                 font-size: 35px;
                 line-height: 1;
                 margin-top: 15px;
@@ -541,7 +553,7 @@ header {
         }
 
         p {
-            font-size: 19px;
+            font-size: 22px;
             color: #5b72ab;
 
             @include media-query($on-mobile) {
