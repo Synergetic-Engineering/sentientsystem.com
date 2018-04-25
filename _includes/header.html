@@ -11,7 +11,7 @@
         </svg>
       </a>
 
-      <div class="trigger">
+      <div class="trigger hide-menu">
         {% for item in site.data.menu %}
           <a class="page-link {% if item.class %}{{item.class}}{% endif %}" href="{{ item.target | prepend: site.baseurl }}">{{ item.label }}</a>
         {% endfor %}

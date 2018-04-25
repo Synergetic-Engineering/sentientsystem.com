@@ -408,7 +408,10 @@ section {
 
         .trigger {
             clear: both;
-            display: none;
+        }
+
+        .hide-menu {
+            display: none !important;
         }
 
         &:hover .trigger {
@@ -738,9 +741,16 @@ header {
     .concept {
         background: #D5E0ED;
 
+        @include media-query($on-mobile) {
+            .col-10 {
+                font-size: 12px;
+            }
+        }
+
         @include media-query($on-tablet) {
             .mb-1 {
-                margin-top: -17px;
+                margin-top: 1%;
+                padding: 5px;
             }
         }
     }
@@ -749,9 +759,19 @@ header {
 
         @include media-query($on-tablet) {
             .mb-1 {
-                margin-top: -10px;
+                margin-top: 1%;
+                padding: 0;
             }
         }
+        @include media-query($on-mobile) {
+            .col-10 {
+                font-size: 12px;
+            }
+            .col-2 {
+                margin-top: 5%;
+            }
+        }
+
     }
     .analyse {
         background: #B4CBE2

@@ -16,8 +16,9 @@ $(document).ready(function($){
 		swal('Oops!', $msg, 'warning');
 	}
 
-  	$('.menu-icon').on('click', function(e){
+  	$('a.menu-icon').on('click', function(e){
     	e.preventDefault();
+    	$('.trigger').toggleClass('hide-menu');
   	});
 
 	$('#contact').submit(function(e) {
@@ -49,7 +50,7 @@ $(document).ready(function($){
 		});
 	  }
 
-	  
+
 	});
 
 	$(document).on('click', 'a[href^="#"]', function (event) {
@@ -59,5 +60,5 @@ $(document).ready(function($){
 	        scrollTop: $($.attr(this, 'href')).offset().top
 	    }, 500);
 	});
-	
+
 });
