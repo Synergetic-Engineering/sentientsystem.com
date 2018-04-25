@@ -545,7 +545,7 @@ header {
                 line-height: 1;
                 margin-top: 15px;
             }
-            @media only screen and (min-device-width: 500px) and (max-device-width: 1023px) and (orientation:landscape) {
+            @media only screen and (min-device-width: 500px) and (max-device-width: 1023px) {
                 font-size: 35px;
                 line-height: 1;
                 margin-top: 15px;
@@ -558,7 +558,11 @@ header {
 
             @include media-query($on-mobile) {
                 font-size: 16px;
-                color: #b3e6ee;
+                // color: #b3e6ee;
+                color: #5b72ab;
+                background-color: rgba(255, 255, 255, 0.6);
+                padding: 6px 0;
+                border-radius: 5px;
             }
 
         }
