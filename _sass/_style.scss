@@ -611,6 +611,9 @@ header {
                     min-width: 115px;
                     margin-bottom: 20px;
                 }
+                @media only screen and (max-device-width: $on-tablet) and (orientation:landscape) {
+                    width: 40%;
+                }
             }
         }
 
@@ -644,6 +647,9 @@ header {
                 @include media-query($on-mobile) {
                     min-width: 115px;
                     margin-bottom: 20px;
+                }
+                @media only screen and (max-device-width: $on-tablet) and (orientation:landscape) {
+                    width: 40%;
                 }
             }
         }
