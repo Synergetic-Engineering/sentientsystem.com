@@ -7,7 +7,10 @@
 
     {% include header.html %}
     <div class="page-wrapper">
-    {{ content }}
+      <div class="hero-title">
+        <h1 class="top-title">{{ page.title }}</h1>
+      </div>
+      {{ content }}
     </div>
 
     {% include footer.html %}

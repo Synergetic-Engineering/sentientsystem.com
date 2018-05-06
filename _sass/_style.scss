@@ -197,7 +197,8 @@ pre {
     max-width: $content-width;
     margin-right: auto;
     margin-left: auto;
-    padding-top: 8%;
+    // padding-top: 8%;
+    padding-top: 100px;
     padding-right: $spacing-unit;
     padding-left: $spacing-unit;
     @extend %clearfix;
@@ -550,7 +551,7 @@ header {
         h1 {
             font-weight: 700;
             font-size: 60px;
-            color: #5b72ab;
+            color: $sitenav-color;
             @include media-query($on-mobile) {
                 font-size: 35px;
                 line-height: 1;
@@ -565,12 +566,12 @@ header {
 
         p {
             font-size: 22px;
-            color: #5b72ab;
+            color: $sitenav-color;
 
             @include media-query($on-mobile) {
                 font-size: 16px;
                 // color: #b3e6ee;
-                color: #5b72ab;
+                color: $sitenav-color;
                 background-color: rgba(255, 255, 255, 0.6);
                 padding: 6px 0;
                 border-radius: 5px;
@@ -815,5 +816,34 @@ header {
         -ms-flex: 0 0 50%;
         flex: 0 0 50%;
         max-width: 50%;
+    }
+}
+
+/**
+ * Case studies
+*/
+
+.page-wrapper {
+    .hero-title {
+        width: max-content;
+        margin-bottom: 2em;
+    }
+    .top-title {
+        margin-bottom: 0;
+        width: calc(100% + 0.5em);
+        font-size: 2.5em;
+        font-weight: 600;
+        line-height: 1.65;
+        margin: 0 0 1em 0;
+        box-sizing: border-box;
+        &:after {
+            content: '';
+            background-color: $text-color;
+            display: block;
+            height: 2px;
+            margin: 0.325em 0 0.5em 0;
+            width: 100%;
+        }
+
     }
 }
