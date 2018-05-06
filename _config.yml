@@ -14,3 +14,7 @@ url: "https://sentientsystem.com" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
+
+collections:
+    sentientsystem-library:
+        output: true
