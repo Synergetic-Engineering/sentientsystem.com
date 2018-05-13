@@ -53,7 +53,7 @@ $(document).ready(function($){
 
 	});
 
-	$(document).on('click', 'a[href^="#"]', function (event) {
+	$(document).on('click', 'a[href^="#contact-us"]', function (event) {
 	    event.preventDefault();
 
 	    $('html, body').animate({

@@ -16,5 +16,7 @@ url: "https://sentientsystem.com" # the base hostname & protocol for your site
 markdown: kramdown
 
 collections:
-    sentientsystem-library:
-        output: true
+  sentientsystem-library:
+    output: true
+  case-studies:
+    output: true
