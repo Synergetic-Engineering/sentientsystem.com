@@ -957,3 +957,55 @@ table.alt tfoot { border-top: 0; }
     }
 
 }
+
+/* Research page */
+
+/* Pill-tab */
+.pill-style {
+    justify-content: center;
+    margin-left: 0px;
+}
+/* Pill-tab End */
+.nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.nav-link {
+    display: block;
+    padding: .5rem 1rem;
+    padding-top: 0.5rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+}
+
+.nav-pills .nav-link {
+  // border-radius: 0.25rem;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #202a5b;
+}
+
+.nav-pills .nav-link {
+    background-color: #f6f6f6;
+}
+.nav-link:focus, .nav-link:hover {
+    text-decoration: none;
+}
+.tab-content>.active {
+    display: block !important;
+}
+.tab-content>.tab-pane {
+    display: none;
+}
+.fade {
+    transition: opacity .15s linear;
+}
