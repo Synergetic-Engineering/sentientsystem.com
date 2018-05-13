@@ -19,4 +19,6 @@ collections:
   sentientsystem-library:
     output: true
   case-studies:
-    output: true
+    output: false
+  research:
+    output: false

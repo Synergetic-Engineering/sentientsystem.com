@@ -975,18 +975,6 @@ table.alt tfoot { border-top: 0; }
   margin-bottom: 0;
   list-style: none;
 }
-.nav-link {
-    display: block;
-    padding: .5rem 1rem;
-    padding-top: 0.5rem;
-    padding-right: 1rem;
-    padding-bottom: 0.5rem;
-    padding-left: 1rem;
-}
-
-.nav-pills .nav-link {
-  // border-radius: 0.25rem;
-}
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
@@ -994,8 +982,16 @@ table.alt tfoot { border-top: 0; }
   background-color: #202a5b;
 }
 
-.nav-pills .nav-link {
+.nav-pills {
+    .nav-link {
     background-color: #f6f6f6;
+    display: block;
+    padding: .5rem 1rem;
+    padding-top: 0.5rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    }
 }
 .nav-link:focus, .nav-link:hover {
     text-decoration: none;
