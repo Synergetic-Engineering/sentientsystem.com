@@ -1,0 +1,59 @@
+---
+layout: default
+title: Contact Us
+permalink: /contact/
+---
+<section id="contact-text" class="pt-100">
+    <div class="hero-title">
+      <h1 class="top-title">{{ page.title }}</h1>
+    </div>
+    <div class="row">
+        <div class="col">
+            {% assign text-content = site.contact  | where:"name","section-content" %}
+            {% for item in text-content %}
+              {{ item.content }}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section id="contact-form" class="mb-5">
+    <div class="row">
+
+        <div class="col-md-4">
+        {% assign text-content = site.contact  | where:"name","address" %}
+        {% for item in text-content %}
+          {{ item.content }}
+        {% endfor %}
+        </div>
+        <div class="col-md-8">
+
+            <div class="form-container">
+                <form name="contact" method="POST" id="contact" netlify>
+                    <div class="row">
+                        <div class="col-md-6"><input name="first-name" class="field" type="text" placeholder="First Name"></div>
+                        <div class="col-md-6"><input name="last-name" class="field" type="text" placeholder="Last Name"></div>
+                        <div class="col-md-12"><input name="contact-email" class="field" type="email" placeholder="Email"></div>
+                        <div class="col-md-12"><input name="message" class="field" type="text" placeholder="Message" rows="5"></div>
+                        <div class="col-md-12"><textarea name="message" placeholder="Message"></textarea></div>
+                        <div class="col-md-2"><button class="btn btn-100" type="submit">SUBMIT</button></div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script src="{{ "/assets/js/sweetalert2.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/assets/js/app.js" | prepend: site.baseurl }}"></script>
+    {% if page.title == 'Research' %}
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    {% endif %}
+</footer>

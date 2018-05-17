@@ -22,3 +22,5 @@ collections:
     output: false
   research:
     output: false
+  contact:
+    output: false
