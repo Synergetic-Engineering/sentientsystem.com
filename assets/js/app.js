@@ -26,25 +26,16 @@ $(document).ready(function($){
 
 	  var $form = $(this);
     var name = $('input[name="name"]').val();
-    var firstName = $('input[name="name"]').val();
     var email = $('input[name="email"]').val();
-	  var contactEmail = $('input[name="contact-email"]').val();
 	  var business = $('input[name="business-name"]').val();
     var phone = $('input[name="phone-number"]').val();
-	  var message = $('textarea[name="contact-message"]').val();
 
 	  if( name === '' ) {
 	  	doAlert('Field name cannot be empty.');
 	  } else if( !validateEmail(email) ) {
 	  	doAlert('Your email address is invalid.');
-    } else if( !validateEmail(contactEmail) ) {
-      doAlert('Your email address is invalid.');
 	  } else if( business === '' ) {
 	  	doAlert('Business name cannot be empty.');
-    } else if( firstName === '' ) {
-      doAlert('firstName name cannot be empty.');
-    } else if( message === '' ) {
-      doAlert('message cannot be empty.');
 	  } else if( phone === '' ) {
 	  	doAlert('Phone number cannot be empty.');
 	  } else {
@@ -61,7 +52,34 @@ $(document).ready(function($){
 
 
 	});
+  $('#contact-page').submit(function(e) {
+    e.preventDefault();
 
+    var $form = $(this);
+    var firstName = $('input[name="first-name"]').val();
+    var contactEmail = $('input[name="contact-email"]').val();
+    var message = $('textarea[name="contact-message"]').val();
+
+    if( firstName === '' ) {
+      doAlert('First name cannot be empty.');
+    } else if( !validateEmail(contactEmail) ) {
+      doAlert('Your email address is invalid.');
+    } else if( message === '' ) {
+      doAlert('message cannot be empty.');
+    } else {
+      $.post($form.attr('action'), $form.serialize()).then(function() {
+        swal({
+        title: 'Thank you',
+        text: "We will get back to you soon!",
+        type: 'success'
+      }).then((result) => {
+          $('#contact-page').trigger("reset");
+      });
+    });
+    }
+
+
+  });
 	$(document).on('click', 'a[href^="#contact-us"]', function (event) {
 	    event.preventDefault();
 
