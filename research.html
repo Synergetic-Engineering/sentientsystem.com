@@ -23,11 +23,22 @@ permalink: /research/
 <section id="{{ section.name }}">
     <div class="row">
 
-        <div class="col-md-3 mb-sm-3">
+        <div class="col-md-3 mb-3">
             {% assign items = section.items %}
             {% for item in items %}
                 {% if item.imageLeft %}
                     <img src="{{ item.image }}" class="img-fluid" alt="{{ item.image-alt }}">
+                {% elsif item.imageLeft == false %}
+                    <div class="container-fluid pr-0">
+                        <div class="row">
+                           <div class="col-md-3 col-2 p-0">
+                               <img src="/assets/images/sentients_research.png" alt="sentient logo" width="70" height="63">
+                           </div>
+                           <div class="col-md-9 col-10 pr-0 subtitle-size">
+                               <strong>{{ item.image-title }}</strong>
+                           </div>
+                        </div>
+                    </div>
                 {% endif %}
             {% endfor %}
         </div>
@@ -57,14 +68,13 @@ permalink: /research/
             {% for item in items %}
                 {% if item.imageLeft == false %}
                     <img src="{{ item.image }}" class="img-fluid" alt="{{ item.image-alt }}">
-                {% endif %}
-                {% if item.imageLeft %}
+                {% elsif item.imageLeft %}
                 <div class="container-fluid pr-0">
                     <div class="row">
-                       <div class="col-md-3 col-sm-auto p-0">
+                       <div class="col-md-3 col-2 p-0">
                            <img src="/assets/images/sentients_research.png" alt="sentient logo" width="70" height="63">
                        </div>
-                       <div class="col-md-9 col-sm pr-0 subtitle-size">
+                       <div class="col-md-9 col-10 pr-0 subtitle-size">
                            <strong>{{ item.image-title }}</strong>
                        </div>
                     </div>

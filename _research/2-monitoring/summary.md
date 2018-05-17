@@ -4,6 +4,7 @@ name: summary
 imageLeft: false
 image: /assets/images/GHG.png
 image-alt: Monitoring image
+image-title : Empowers<br>Research in greenhouse gas monitoring
 ---
 In 2011, SentientSystem was utilised as the core technology in an engineering thesis on Performance Engineering. The research involved relating key power plant process metrics to greenhouse gas emissions .
 

@@ -4,6 +4,7 @@ name: summary
 imageLeft: true
 image: /assets/images/pdca.png
 image-alt: PDCA
+image-title : Empowers<br>Research in mining energy efficiency
 ---
 Energy efficiency is a problem that has not been tackled in mining, despite other industries doing so. Mathematical and integration complexity has put a high gap between current understanding and realisable optimisation of mines.
 
