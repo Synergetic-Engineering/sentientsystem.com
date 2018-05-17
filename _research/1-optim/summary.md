@@ -4,7 +4,7 @@ name: summary
 imageLeft: true
 image: /assets/images/BULL-RUN-case-study.jpg
 image-alt: Bull run case study
-image-title : Empowers Optimisation projects on complex assets
+image-title : Empowers<br>Optimisation projects on complex assets
 ---
 SentientSystem was used in an optimisation project with the Electricity Power Research Institute (EPRI) in USA. The goal was to achieve cost savings related to soot blowing practices in a power plant.
 

@@ -47,21 +47,21 @@ permalink: /research/
             </div>
         </div>
 
-        <div class="col-md-3">
+        <div class="col-md-3 pr-0">
             {% assign items = section.items %}
             {% for item in items %}
                 {% if item.imageLeft == false %}
                     <img src="{{ item.image }}" class="img-fluid" alt="{{ item.image-alt }}">
                 {% endif %}
                 {% if item.imageLeft %}
-                <div class="container-fluid">
+                <div class="container-fluid pr-0">
                     <div class="row">
-                       <col-md-3>
+                       <div class="col-md-3 col-sm-auto p-0">
                            <img src="/assets/images/sentients_research.png" alt="sentient logo" width="70" height="63">
-                       </col-md-3>
-                       <col-md-6>
+                       </div>
+                       <div class="col-md-9 col-sm pr-0 subtitle-size">
                            <strong>{{ item.image-title }}</strong>
-                       </col-md-6>
+                       </div>
                     </div>
                 </div>
                 {% endif %}

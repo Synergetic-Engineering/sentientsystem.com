@@ -965,7 +965,6 @@ table.alt tfoot { border-top: 0; }
     justify-content: center;
     margin-left: 0px;
 }
-/* Pill-tab End */
 .nav {
   display: -ms-flexbox;
   display: flex;
@@ -1004,4 +1003,11 @@ table.alt tfoot { border-top: 0; }
 }
 .fade {
     transition: opacity .15s linear;
+}
+/* Pill-tab End */
+.subtitle-size {
+    display: inline-flex;
+    strong {
+    font-size: 14px;
+    }
 }
