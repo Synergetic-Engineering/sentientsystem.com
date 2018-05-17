@@ -62,3 +62,47 @@ $(document).ready(function($){
 	});
 
 });
+
+// var $ = jQuery.noConflict();
+var $scroll = 0;
+
+$(document).ready(function() {
+	backButtonShowHide();
+  backToTop();
+});
+
+function totop_button(d) {
+    var c = $("#back_to_top");
+    c.removeClass("off on");
+    if (d === "on") {
+        c.addClass("on")
+    } else {
+        c.addClass("off")
+    }
+}
+function backButtonShowHide() {
+    $(window).scroll(function() {
+        var a = $(this).scrollTop();
+        var f = $(this).height();
+        var e;
+        if (a > 0) {
+            e = a + f / 2
+        } else {
+            e = 1
+        }
+        if (e < 1000) {
+            totop_button("off")
+        } else {
+            totop_button("on")
+        }
+    })
+}
+function backToTop() {
+    $(document).on("click", "#back_to_top", function(a) {
+        a.preventDefault();
+        $("body,html").animate({
+            scrollTop: 0
+        }, $(window).scrollTop() / 3, "linear")
+    })
+}
+
