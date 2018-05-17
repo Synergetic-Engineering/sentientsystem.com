@@ -1150,6 +1150,14 @@ table.alt tfoot { border-top: 0; }
 }
 
 #contact-form {
-    background: #E5EBF1
+    background: #E5EBF1;
+
+    h4 {
+        font-weight: bold;
+    }
+
+    textarea {
+        font-family: unset;
+    }
 }
 /* Contact Us page End */

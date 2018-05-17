@@ -17,33 +17,35 @@ permalink: /contact/
     </div>
 </section>
 
-<section id="contact-form" class="mb-5">
-    <div class="row">
+<div class="container-fluid">
+    <section id="contact-form" class="mb-5">
 
-        <div class="col-md-4">
-        {% assign text-content = site.contact  | where:"name","address" %}
-        {% for item in text-content %}
-          {{ item.content }}
-        {% endfor %}
-        </div>
-        <div class="col-md-8">
+        <div class="row">
 
-            <div class="form-container">
-                <form name="contact" method="POST" id="contact" netlify>
-                    <div class="row">
-                        <div class="col-md-6"><input name="first-name" class="field" type="text" placeholder="First Name"></div>
-                        <div class="col-md-6"><input name="last-name" class="field" type="text" placeholder="Last Name"></div>
-                        <div class="col-md-12"><input name="contact-email" class="field" type="email" placeholder="Email"></div>
-                        <div class="col-md-12"><input name="message" class="field" type="text" placeholder="Message" rows="5"></div>
-                        <div class="col-md-12"><textarea name="message" placeholder="Message"></textarea></div>
-                        <div class="col-md-2"><button class="btn btn-100" type="submit">SUBMIT</button></div>
-                    </div>
-                </form>
+            <div class="col-md-4">
+            {% assign text-content = site.contact  | where:"name","address" %}
+            {% for item in text-content %}
+              {{ item.content }}
+            {% endfor %}
             </div>
+            <div class="col-md-8">
+
+                <div class="form-container">
+                    <form name="contact" method="POST" id="contact" netlify>
+                        <div class="row">
+                            <div class="col-md-6"><input name="first-name" class="field" type="text" placeholder="First Name"></div>
+                            <div class="col-md-6"><input name="last-name" class="field" type="text" placeholder="Last Name"></div>
+                            <div class="col-md-12"><input name="contact-email" class="field" type="email" placeholder="Email"></div>
+                            <div class="col-md-12"><textarea name="contact-message" class="field" type="text" placeholder="Message"></textarea></div>
+                            <div class="col-md-2"><button class="btn btn-100" type="submit">SUBMIT</button></div>
+                        </div>
+                    </form>
+                </div>
+        </div>
 
         </div>
-    </div>
-</section>
+    </section>
+</div>
 
 
 <footer>

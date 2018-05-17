@@ -25,17 +25,26 @@ $(document).ready(function($){
 	  e.preventDefault();
 
 	  var $form = $(this);
-	  var name = $('input[name="name"]').val();
-	  var email = $('input[name="email"]').val();
+    var name = $('input[name="name"]').val();
+    var firstName = $('input[name="name"]').val();
+    var email = $('input[name="email"]').val();
+	  var contactEmail = $('input[name="contact-email"]').val();
 	  var business = $('input[name="business-name"]').val();
-	  var phone = $('input[name="phone-number"]').val();
+    var phone = $('input[name="phone-number"]').val();
+	  var message = $('textarea[name="contact-message"]').val();
 
 	  if( name === '' ) {
 	  	doAlert('Field name cannot be empty.');
 	  } else if( !validateEmail(email) ) {
 	  	doAlert('Your email address is invalid.');
+    } else if( !validateEmail(contactEmail) ) {
+      doAlert('Your email address is invalid.');
 	  } else if( business === '' ) {
 	  	doAlert('Business name cannot be empty.');
+    } else if( firstName === '' ) {
+      doAlert('firstName name cannot be empty.');
+    } else if( message === '' ) {
+      doAlert('message cannot be empty.');
 	  } else if( phone === '' ) {
 	  	doAlert('Phone number cannot be empty.');
 	  } else {
@@ -75,9 +84,9 @@ function totop_button(d) {
     var c = $("#back_to_top");
     c.removeClass("off on");
     if (d === "on") {
-        c.addClass("on")
+        c.addClass("on");
     } else {
-        c.addClass("off")
+        c.addClass("off");
     }
 }
 function backButtonShowHide() {
@@ -95,7 +104,7 @@ function backButtonShowHide() {
         } else {
             totop_button("on")
         }
-    })
+    });
 }
 function backToTop() {
     $(document).on("click", "#back_to_top", function(a) {
@@ -103,6 +112,6 @@ function backToTop() {
         $("body,html").animate({
             scrollTop: 0
         }, $(window).scrollTop() / 3, "linear")
-    })
+    });
 }
 
