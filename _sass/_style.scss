@@ -1161,3 +1161,30 @@ table.alt tfoot { border-top: 0; }
     }
 }
 /* Contact Us page End */
+
+/* About Us page */
+#about-text {
+    .hero-title {
+        width: max-content;
+        margin-bottom: 2em;
+    }
+    .top-title {
+        margin-bottom: 0;
+        width: calc(100% + 0.5em);
+        font-size: 2.5em;
+        box-sizing: border-box;
+        &:after {
+            content: '';
+            // background-color: $text-color;
+            background-color: #000;
+            display: block;
+            height: 2px;
+            margin: 0.325em 0 0.5em 0;
+            width: 100%;
+        }
+    }
+    p {
+        letter-spacing: 0.025em;
+    }
+}
+/* About Us page End*/

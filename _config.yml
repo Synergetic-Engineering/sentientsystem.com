@@ -24,3 +24,5 @@ collections:
     output: false
   contact:
     output: false
+  about:
+    output: false
