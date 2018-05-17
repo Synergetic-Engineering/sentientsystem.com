@@ -90,7 +90,6 @@ $(document).ready(function($){
 
 });
 
-// var $ = jQuery.noConflict();
 var $scroll = 0;
 
 $(document).ready(function() {

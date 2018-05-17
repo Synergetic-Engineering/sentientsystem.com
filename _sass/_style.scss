@@ -836,7 +836,6 @@ header {
         box-sizing: border-box;
         &:after {
             content: '';
-            // background-color: $text-color;
             background-color: $brand-color;
             display: block;
             height: 2px;
@@ -1136,7 +1135,6 @@ table.alt tfoot { border-top: 0; }
         box-sizing: border-box;
         &:after {
             content: '';
-            // background-color: $text-color;
             background-color: #000;
             display: block;
             height: 2px;
@@ -1175,7 +1173,6 @@ table.alt tfoot { border-top: 0; }
         box-sizing: border-box;
         &:after {
             content: '';
-            // background-color: $text-color;
             background-color: #000;
             display: block;
             height: 2px;
